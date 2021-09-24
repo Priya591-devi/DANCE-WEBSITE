@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+block style
+    style
+        include ../static/style.css
+
+block content
+   
+    section#intro-section 
+        h2  Welcome to the PRIYA'S dance academy
+        h3 Eat sleep Dance and repeate.
+
+    section#missionSection
+        h2 Our Mission
+        div.card-wrapper     
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                        div.card-img    
+                            img(src="/static/img/1.jpeg")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+            div.card
+                h3 Dance the way you lijpe
+                div.card-box
+                        div.card-img
+                            img(src="/static/img/2.jpeg")
+                        div.card-content
+                            p This is the best dance academy of the universe
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                        div.card-img
+                            img(src="/static/img/3.jpeg")
+
+                        div.card-content
+                            p This is the best dance academy of the universe
+    
+    section#Sponcer-section     
+       h2 Our Sponcers 
+       div#sponcers
+                img(src="/static/img/apple.jpeg", alt="", class="sp-image")
+                img(src="/static/img/nike.jpeg", alt="", class="sp-image")
+                img(src="/static/img/new.png", alt="", class="sp-image")
+                img(src="/static/img/adidas.jpeg", alt="", class="sp-image")
